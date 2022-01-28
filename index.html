@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game modes - Back Dev's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gamemodes">
+        <div class="modes">
+            <div class="logo"><img src="https://media.discordapp.net/attachments/936331605818093630/936393977865846835/Logo-full.png?width=1025&height=231" alt=""></div>
+            <div class="pvp" onclick="togglePVP(), show()">
+                <h1>PVP</h1>
+            </div>
+            <div class="corrida" onclick="show()">
+                <h1>CORRIDA</h1>
+            </div>
+            <div class="corrida" onclick="show()">
+                <h1>TESTE</h1>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="screenPvp">
+
+        <div class="pvp-nui">
+            <div class="logo"><img src="https://media.discordapp.net/attachments/936331605818093630/936393977865846835/Logo-full.png?width=1025&height=231" alt=""></div>
+            <div class="modes-pvp">
+                <ion-icon onclick="togglePVP()" class="close-btn" name="close-circle-outline"></ion-icon>
+                <div class="cards">
+                    <div class="card zona-pistol">
+                        <h2>PISTOL ZONE</h2>
+                        <img src="img/pistol.png" alt="">
+                    </div>
+                    <div class="card zona-rifle">
+                        <h2>RIFLE ZONE</h2>
+                        <img src="img/rifle.png" alt="">
+                    </div>
+                    <div class="card gun-game">
+                        <h2>GUN-GAME</h2>
+                        <img src="img/gun game.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    function show(){
+        document.querySelector('.gamemodes').classList.toggle("show")
+    }
+    function togglePVP(){
+        document.querySelector('.screenPvp').classList.toggle("show")
+    }
+</script>
+</body>
+</html>
